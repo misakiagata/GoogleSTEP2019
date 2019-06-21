@@ -1,5 +1,4 @@
 import read
-import numpy as np
 
 def findName(name):
     data = read.readNames('nicknames.txt') 

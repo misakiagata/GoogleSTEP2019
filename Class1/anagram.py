@@ -18,9 +18,13 @@ def main():
     givenString = input('input given string: ')
     combination = makeCombinations(givenString)
     d = read.makeSortedDictionary()
+    counter = 0
     for i in combination:
         if i in d.keys():
             print(d[i])
+            counter += 1
+    if counter == 0:
+        print('Sorry...but no word can be created')
 
 if __name__ == '__main__':
     main()

@@ -15,7 +15,7 @@ def makeCombinations(word):
 
 
 def main():
-    givenString = input('input given string: ')
+    givenString = input('input given string: ') 
     combination = makeCombinations(givenString)
     d = read.makeSortedDictionary()
     counter = 0
@@ -24,7 +24,7 @@ def main():
             print(d[i])
             counter += 1
     if counter == 0:
-        print('Sorry...but no word can be created')
+        print('Sorry...but no word can be created') #1つもanagramができなかった場合
 
 if __name__ == '__main__':
     main()
